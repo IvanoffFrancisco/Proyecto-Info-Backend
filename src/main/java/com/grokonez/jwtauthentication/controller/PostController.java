@@ -17,8 +17,9 @@ public class PostController {
 
     @PostMapping
     public String uploadFile(@RequestParam MultipartFile foto){
+
         if(!foto.isEmpty()){
-            Path directorioRecursos= Paths.get("src//main//resources//static/image");
+            Path directorioRecursos= Paths.get("src//main//resources//static/");
             String rootPath=directorioRecursos.toFile().getAbsolutePath();
             try {
                 byte[] bytes=foto.getBytes();

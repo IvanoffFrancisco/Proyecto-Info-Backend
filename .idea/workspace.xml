@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="340af802-43f5-4c1d-a648-42c7dbdc8d64" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/PostController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/model/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/repository/PostRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/PostService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/AuthRestAPIs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserPrinciple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/services/UserPrinciple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/grokonez/jwtauthentication/security/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/image/olas.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/controller/AuthRestAPIs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/controller/AuthRestAPIs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/security/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/grokonez/jwtauthentication/security/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/image/olas.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
