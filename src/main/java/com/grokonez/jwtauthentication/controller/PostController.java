@@ -1,36 +1,29 @@
 package com.grokonez.jwtauthentication.controller;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import com.grokonez.jwtauthentication.repository.PostRepository;
+import com.grokonez.jwtauthentication.security.services.PostService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/post")
 public class PostController {
 
-    @PostMapping
-    public String uploadFile(@RequestParam MultipartFile foto){
+    @Autowired
+    private PostService postService;
 
-        if(!foto.isEmpty()){
-            Path directorioRecursos= Paths.get("src//main//resources//static/");
-            String rootPath=directorioRecursos.toFile().getAbsolutePath();
-            try {
-                byte[] bytes=foto.getBytes();
-                Path rutaCompleta=Paths.get(rootPath+"//"+foto.getOriginalFilename());
-                Files.write(rutaCompleta,bytes);
-                return "Imagen guardada";
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        return "Imagen guardada";
+
+    @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public void uploadFile(@RequestParam MultipartFile foto){
+
+        postService.uploadFile(foto);
     }
 
 
