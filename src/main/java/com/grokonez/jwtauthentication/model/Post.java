@@ -19,6 +19,12 @@ public class Post implements Serializable {
     @Column(name = "imagen")
     private String imagen;
 
+    public Post(String titulo, String descripcion, String imagen) {
+        this.titulo = titulo;
+        this.descripcion = descripcion;
+        this.imagen = imagen;
+    }
+
     public long getId_post() {
         return id_post;
     }
